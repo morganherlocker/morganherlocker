@@ -2,4 +2,30 @@ extends layout
 
 block content
 	h3 contact
-	p this is the contact page
+
+	div(style="padding-bottom:50px;padding-top:25px;")
+		p.
+			Feel free to contact me with any questions or opportunities. If you are looking for someone to develop 
+			your next piece of software, I would love to give you a free consultation.
+
+	
+	form.form-horizontal
+		div.control-group
+			l.control-label name 
+			div.controls(for="inputName")
+				input(type="text", id="inputName")
+		div.control-group
+			l.control-label email
+			div.controls
+				input(type="text", id="inputEmail")
+		div.control-group
+			l.control-label phone 
+			div.controls
+				input(type="text", id="inputPhone")
+		div.control-group
+			l.control-label message 
+			div.controls
+				textarea( id="inputMessage")
+		div.control-group
+			div.controls
+				input.btn(type="submit", value="send")
