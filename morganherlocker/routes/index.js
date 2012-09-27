@@ -4,8 +4,15 @@
  */
 
 exports.index = function(req, res){
-//	res.render('layout', { title: 'Express' });
   res.render('index', { title: 'Express' });
+};
+
+/*
+ * GET blog page.
+ */
+
+exports.blog = function(req, res){
+  res.render('blog', { title: 'Express' });
 };
 
 /*
@@ -24,7 +31,3 @@ exports.contact = function(req, res){
   res.render('contact', { title: 'Express' });
 };
 
-/*
- * Tweet Stream
- */
- 

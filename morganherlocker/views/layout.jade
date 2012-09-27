@@ -28,6 +28,10 @@ html
 									a(href='/') 
 										i.icon-home.icon-white
 										span  home
+								li
+									a(href='/blog') 
+										i.icon-pencil.icon-white
+										span  blog
 								li 
 									a(href='/about')
 										i.icon-user.icon-white									
@@ -37,8 +41,10 @@ html
 										i.icon-envelope.icon-white
 										span  contact
 			div(style='padding-bottom:60px;')
-			div.row
-				div.span9
-					block content
-				div.span2
-					include feed
+			block header
+			div.container
+				div.row
+					div.span9
+						block content
+					div.span3
+						include feed
