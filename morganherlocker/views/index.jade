@@ -1,9 +1,23 @@
 extends layout
 
 block header
-
+	div.jumbotron.masthead
+		div.container
+			h1 cool idea?
+			p let's build it.
+			p
+			a.btn.btn-primary.btn-large(href='/contact') get started
+			ul.masthead-links
+				li
+					a(href='http://nodejs.org') node.js
+				li
+					a(href='http://github.org') git
+				li
+					a(href='http://ubuntu.org') ubuntu
+			
+						
 block content
-	row
+	row.span10.offset1
 		div.span3
 			row
 				h1 style
@@ -22,6 +36,11 @@ block content
 			row
 				img(src='img/slide5.png')
 		div.span3
-			h1 data
-
+			row
+				h1 data
+				p .
+					Flexible and powerful data systems. Whether its gathering, storing, or analyzing, we can build a system 
+					that does it all for you.
+			row
+				img(src='img/slide6.png')
 	
