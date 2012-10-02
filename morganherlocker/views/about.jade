@@ -1,14 +1,19 @@
 extends layout
 
 block content
-	div.hero-unit
+	row
+		p
+		
+		div.span6
+			img(src='img/about.jpg')
 
-		h1 hello, 
-		br
-		p got an idea? 
-		p let's get started.
-	p .
-		Do you have an awesome new idea? We can help. From the beginning, we can help you design an implement your app ideas.
-		Whether it's a system that tracks the locations of recycling bins in a city, a user-friendly app that lets you keep 
-		your customers up to date on your products, or a slick dashboard that tracks unicorn sightings by county, we can help 
-		you make your dream app a reality.
+			p
+			:markdown
+				Do you have an awesome new idea?  From the beginning, I can help you design an implement your app ideas.
+				From big brand Fortune 500s to local small businesses, I have helped to architect systems 
+				designed to be highly performant and scalable.  Using the newest tech 
+				on the block and adhering to strict engineering principles, I am able to deliver results quickly and reliably. 
+				To get the ball rolling, [contact me](/contact) today. All initial consultations are free of charge.
+				
+		div.span3
+			include feed
